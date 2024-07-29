@@ -1,6 +1,37 @@
-.sidebar{
-    display: block;
-    background-color: var(--secondary-color);
-    height: 100%;
-    width: 17.5%;
+.sidebar {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 15%;
+  color: white;
 }
+
+.sidebar li{
+    margin: 20px 0;
+}
+
+.sidebar-links img {
+  height: 25px;
+}
+
+.sidebar li div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.horizontal-line {
+  border-bottom: 3px solid #5989ad;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
