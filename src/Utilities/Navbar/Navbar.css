@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #F7F7F7;
+    box-shadow: 0px 4px 11.9px -3px #00000017;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 47.5rem;
+}
+.navbar h1{
+
+}
+.navright{
+    display: flex;
+    width: 18rem;
+    height: 78%;
+}
