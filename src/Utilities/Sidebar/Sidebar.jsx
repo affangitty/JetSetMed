@@ -1,59 +1,74 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
+
 const Sidebar = () => {
+  const sidebarLinksTop = [
+    { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
+    {
+      to: "/appointment-history",
+      src: "Images/Icons/doctor.png",
+      label: "Appointment History",
+    },
+    {
+      to: "/medical-reports",
+      src: "Images/Icons/medic-info.png",
+      label: "Medical Reports",
+    },
+    {
+      to: "/our-services",
+      src: "Images/Icons/stethoscope.png",
+      label: "Our Services",
+    },
+  ];
+
+  const sidebarLinksBottom = [
+    {
+      to: "/rewatch-tutorial",
+      src: "Images/Icons/rewind.png",
+      label: "Rewatch Tutorial",
+      className: "rewind-logo",
+    },
+    { to: "/logout", src: "Images/Icons/exit.png", label: "Logout" },
+  ];
+
   return (
-    <>
-      <div className="sidebar">
-        <div className="sidebar-top">
-          <div className="logo">
-            <h1>JetSetMed</h1>
-          </div>
-          <div className="horizontal-line"></div>
-          <ul className="sidebar-links">
-            <li>
-              <div>
-                <img src="../../public/Images/Icons/dashboard.png" alt="" />{" "}
-                Dashboard
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="../../public/Images/Icons/doctor.png" alt="" />
-                Appointment History
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="../../public/Images/Icons/medic-info.png" alt="" />
-                Medical Reports
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="../../public/Images/Icons/stethoscope.png" alt="" />
-                Our Services
-              </div>
-            </li>
-          </ul>
+    <div className="sidebar">
+      <div className="sidebar-top">
+        <div className="logo">
+          <h1>JetSetMed</h1>
         </div>
+        <div className="horizontal-line"></div>
         <ul className="sidebar-links">
-          <div className="horizontal-line"></div>
-          <li>
-            <div>
-              <img src="../../public/Images/Icons/rewind.png" alt="" />
-              Rewatch Tutorial
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../public/Images/Icons/exit.png" alt="" />
-              Logout
-            </div>
-          </li>
+          {sidebarLinksTop.map((link, index) => (
+            <li key={index}>
+              <Link to={link.to}>
+                <div>
+                  <img src={link.src} alt={link.label} /> {link.label}
+                </div>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
-      ;
-    </>
+      <ul className="sidebar-links">
+        <div className="horizontal-line"></div>
+        {sidebarLinksBottom.map((link, index) => (
+          <li key={index}>
+            <Link to={link.to}>
+              <div>
+                <img
+                  src={link.src}
+                  alt={link.label}
+                  className={link.className}
+                />{" "}
+                {link.label}
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
