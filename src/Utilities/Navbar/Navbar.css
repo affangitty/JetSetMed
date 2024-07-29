@@ -13,6 +13,24 @@
 }
 .navright{
     display: flex;
-    width: 18rem;
+    width: 22rem;
     height: 78%;
+}
+.pinfo{
+    padding-left: 4rem;
+    border-left: 3px solid #00000038;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* background-color: green; */
+}
+.profbutton{
+    color: white;
+    background-color: #194176;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 5rem;
+    border-radius: 2rem;
 }
