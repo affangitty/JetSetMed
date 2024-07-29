@@ -5,9 +5,11 @@ import Sidebar from "../../Utilities/Sidebar/Sidebar";
 
 const Dashboard = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="dashboard">
       <Sidebar />
+      <div className="right-half">
+        <Navbar />
+      </div>
     </div>
   );
 };
