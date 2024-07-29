@@ -5,12 +5,11 @@ const Navbar = () => {
   return <div className="navbar">
     <h1>Dashboard</h1>
     <div className="navright">
-      <div className="notif">
-      </div>
+      <img className="notif" src="../../public/Images/Icons/notification.png" />
       <div className="profile">
-        <div className="pfp"></div>
+        <img className="pfp" src="../../public/Images/pfp.png" />
         <div className="pinfo">
-          <h3>Gagan N Banganagiri</h3>
+          <h1>Gagan N Banganagiri</h1>
         <div className="profbutton"><p>Premium</p></div>
         </div>
       </div>
