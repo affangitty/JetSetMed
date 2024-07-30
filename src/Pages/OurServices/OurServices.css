@@ -6,3 +6,33 @@
     height: 10vh;
     width: 100%;
 }
+.head{
+    text-align: center;
+    font-size: 2rem;
+}
+.osup{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upcards{
+    height: 13rem;
+    padding: 2rem 1rem;
+    display: flex;
+    gap: 2.5rem;
+}
+.osdown{
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 2rem;
+}
+.dc1,.dc2{
+    display: flex;
+    gap: 2.5rem;
+}
