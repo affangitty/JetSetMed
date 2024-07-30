@@ -1,0 +1,70 @@
+.aphtop{
+    height: 7.25rem;
+    width: 100%;
+    display: flex;
+    padding-left: 9rem;
+    gap: 1rem;
+    align-items: center;
+}
+.search{
+    height: 50%;
+    width: 40rem;
+    border-radius: 15rem;
+    background-color: #0000000D;
+    border: 1.12px solid #D0D0D0;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+.search input{
+    width: 88%;
+    height: 100%;
+    font-size: 1.7rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #00000080;
+}
+.search img{
+    height: 2rem;
+}
+.date{
+    height: 50%;
+    width: 9rem;
+    border-radius: 15rem;
+    background-color: #0000000D;
+    border: 1.68px solid #D0D0D0;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
+.date img{
+    height: 3rem;
+}
+.date input,.ppl input{
+    width: 60%;
+    height: 100%;
+    padding-left: 1.3rem;
+    font-size: 1.78rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-weight: 400;
+}
+.ppl{
+    height: 50%;
+    width: 11rem;
+    border-radius: 15rem;
+    background-color: #0000000D;
+    border: 1.68px solid #D0D0D0;
+    display: flex;
+    align-items: center;
+}
+.ppl img{
+    height: 3rem;
+}
+.ppl input{
+    width: 69%;
+}

@@ -8,7 +8,7 @@ const Sidebar = () => {
     { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
     {
       to: "/appointment-history",
-      src: "Images/Icons/doctor.png",
+      src: "Images/Icons/docwhite.png",
       label: "Appointment History",
     },
     {
