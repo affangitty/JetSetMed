@@ -1,0 +1,11 @@
+.greetings {
+  background-color: #5989ad;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  font-size: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: bolder;
+}

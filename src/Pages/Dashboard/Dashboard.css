@@ -1,9 +1,25 @@
-.dashboard{
-    display: flex;
-    height: 100vh;
+.dashboard {
+  display: flex;
+  height: 100vh;
 }
-.right-half{
-    height: 10vh;
-    width: 100%;
 
+.dashboard-content {
+  width: 100%;
+}
+
+.dashboard-main {
+  display: flex;
+  height: 90%;
+}
+
+.dash-left {
+  width: 60%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.dash-right {
+  padding: 2rem;
+  width: 40%;
+  height: 100%;
 }

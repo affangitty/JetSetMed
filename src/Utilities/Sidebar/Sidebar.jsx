@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState("");
   const sidebarLinksTop = [
     { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
     {
@@ -42,10 +43,16 @@ const Sidebar = () => {
         <ul className="sidebar-links">
           {sidebarLinksTop.map((link, index) => (
             <li key={index}>
-              <Link to={link.to}>
+              <NavLink
+                to={link.to}
+                onClick={() => setIsOpen(link.label)}
+                className={`present-link ${
+                  isOpen === link.label && "active-link"
+                }`}
+              >
                 <img src={link.src} alt={link.label} />
                 <p>{link.label}</p>
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -54,10 +61,16 @@ const Sidebar = () => {
         <div className="horizontal-line"></div>
         {sidebarLinksBottom.map((link, index) => (
           <li key={index}>
-            <Link to={link.to}>
+            <NavLink
+              to={link.to}
+              onClick={() => setIsOpen(link.label)}
+              className={`present-link ${
+                isOpen === link.label && "active-link"
+              }`}
+            >
               <img src={link.src} alt={link.label} className={link.className} />
               <p>{link.label}</p>
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

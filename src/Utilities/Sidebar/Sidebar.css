@@ -5,7 +5,7 @@
   justify-content: space-between;
   background-color: var(--secondary-color);
   height: 100%;
-  width: 15%;
+  width: 20%;
   color: white;
 }
 
@@ -17,12 +17,19 @@
   height: 25px;
 }
 
-.sidebar li a {
+.present-link {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 5px;
   color: white;
+  padding-left: 0.5rem;
+}
+
+.active-link {
+  color: #e38c3b;
+  border-left: 3px solid #e38c3b;
+  border-radius: 2px;
 }
 
 .horizontal-line {
