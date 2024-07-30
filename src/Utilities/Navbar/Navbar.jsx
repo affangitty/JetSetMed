@@ -1,9 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({title}) => {
   return <div className="navbar">
-    <h1>Dashboard</h1>
+    <h1>{title}</h1>
     <div className="navright">
       <img className="notif" src="../../public/Images/Icons/notification.png" />
       <div className="profile">

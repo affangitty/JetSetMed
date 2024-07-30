@@ -1,0 +1,8 @@
+.history{
+    display: flex;
+    height: 100vh;
+}
+.right-half{
+    height: 10vh;
+    width: 100%;
+}

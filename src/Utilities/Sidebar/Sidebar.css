@@ -17,11 +17,12 @@
   height: 25px;
 }
 
-.sidebar li div {
+.sidebar li a {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 5px;
+  color: white;
 }
 
 .horizontal-line {

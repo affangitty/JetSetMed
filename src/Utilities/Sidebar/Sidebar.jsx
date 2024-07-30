@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
@@ -43,9 +43,8 @@ const Sidebar = () => {
           {sidebarLinksTop.map((link, index) => (
             <li key={index}>
               <Link to={link.to}>
-                <div>
-                  <img src={link.src} alt={link.label} /> {link.label}
-                </div>
+                <img src={link.src} alt={link.label} />
+                <p>{link.label}</p>
               </Link>
             </li>
           ))}
@@ -56,14 +55,8 @@ const Sidebar = () => {
         {sidebarLinksBottom.map((link, index) => (
           <li key={index}>
             <Link to={link.to}>
-              <div>
-                <img
-                  src={link.src}
-                  alt={link.label}
-                  className={link.className}
-                />{" "}
-                {link.label}
-              </div>
+              <img src={link.src} alt={link.label} className={link.className} />
+              <p>{link.label}</p>
             </Link>
           </li>
         ))}

@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <Sidebar />
       <div className="right-half">
-        <Navbar />
+        <Navbar title={"Dashboard"}/>
       </div>
     </div>
   );
