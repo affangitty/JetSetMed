@@ -50,7 +50,7 @@ const UserCard = () => {
           {userData.phone}
         </p>
       </div>
-      <button className="user-editButton"><img src= {edit} /></button>
+      <img src= {edit} className="user-editButton"/>
     </div>
   );
 };
