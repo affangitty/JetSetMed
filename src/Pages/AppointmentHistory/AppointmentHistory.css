@@ -1,35 +1,46 @@
-.history{
-    display: flex;
-    height: 100vh;
+.history {
+  display: flex;
+  height: 100vh;
 }
-.right-half{
-    height: 10vh;
-    width: 100%;z-index: 1;
+.right-half {
+  height: 10vh;
+  width: 100%;
+  z-index: 1;
 }
-.rightt{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+.rightt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
-.aph{
-    z-index: 0;
-    height: 90vh;
-    width: 100%;
-    background-color: #F7F7F7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.15rem;
+
+.aph-top-bar {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
-.AppointmentCards{
-    width: 87%;
-    height: 30rem;
-    display: flex;
-    gap: 3.35rem;
+.aph {
+  z-index: 0;
+  height: 90vh;
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
 }
-.Ac1,.Ac2{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+.AppointmentCards {
+  width: 87%;
+  height: 30rem;
+  display: flex;
+  gap: 3.35rem;
+}
+.Ac1,
+.Ac2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }

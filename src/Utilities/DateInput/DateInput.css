@@ -1,0 +1,25 @@
+.date {
+  height: 3.625rem;
+  width: 9rem;
+  border-radius: 15rem;
+  background-color: #0000000d;
+  border: 1.68px solid #d0d0d0;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+.date img {
+  height: 3rem;
+}
+.date input,
+.ppl input {
+  width: 60%;
+  height: 100%;
+  padding-left: 1.3rem;
+  font-size: 1.78rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-weight: 400;
+}

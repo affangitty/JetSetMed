@@ -1,0 +1,15 @@
+.ppl {
+  height: 3.625rem;
+  width: 11rem;
+  border-radius: 15rem;
+  background-color: #0000000d;
+  border: 1.68px solid #d0d0d0;
+  display: flex;
+  align-items: center;
+}
+.ppl img {
+  height: 3rem;
+}
+.ppl input {
+  width: 69%;
+}

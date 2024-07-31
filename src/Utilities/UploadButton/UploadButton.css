@@ -1,0 +1,17 @@
+.upload-btn {
+  height: 3.625rem;
+  width: 9rem;
+  border-radius: 15rem;
+  background-color: #194176;
+  color: white;
+  font-size: 1.4rem;
+  border: 1.68px solid #d0d0d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dwnld-icon{
+  height: 1.4rem;
+  margin-right: 5px;
+}
