@@ -6,6 +6,10 @@
     width: 100%;
     margin-top: 2rem;
   }
+
+  .service-card img{
+    height: 1.5rem;
+  }
   
   .service-card h2 {
     font-size: 1.25rem;
