@@ -5,7 +5,7 @@ import Sidebar from "../../Utilities/Sidebar/Sidebar";
 import Greetings from "../../Components/Greetings/Greetings";
 import BookAppointment from "../../Components/BookAppointment/BookAppointment";
 import UserCard from "../../Components/UserCard/UserCard";
-import ServiceCard from "../../Components/ServiceCard/ServiceCard";
+import ServiceOffered from "../../Components/ServiceOffered/ServiceOffered";
 
 const Dashboard = () => {
   return (
@@ -20,7 +20,7 @@ const Dashboard = () => {
           </div>
           <div className="dash-right">
             <UserCard/>
-            <ServiceCard/>
+            <ServiceOffered/>
           </div>
         </div>
       </div>

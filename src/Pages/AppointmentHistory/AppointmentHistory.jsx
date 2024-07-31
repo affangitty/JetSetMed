@@ -1,7 +1,7 @@
 import React from "react";
 import "./AppointmentHistory.css";
 import Search from "../../Utilities/Search/Search";
-import AppointmentCard from "../../Utilities/AppointmentCard/AppointmentCard";
+import AppointmentCard from "../../Components/AppointmentCard/AppointmentCard";
 import Sidebar from "../../Utilities/Sidebar/Sidebar";
 import Navbar from "../../Utilities/Navbar/Navbar";
 
