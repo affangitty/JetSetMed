@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState("");
   const sidebarLinksTop = [
     { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
     {
@@ -45,10 +44,9 @@ const Sidebar = () => {
             <li key={index}>
               <NavLink
                 to={link.to}
-                onClick={() => setIsOpen(link.label)}
-                className={`present-link ${
-                  isOpen === link.label && "active-link"
-                }`}
+                className={({ isActive }) =>
+                  `present-link ${isActive ? "active-link" : ""}`
+                }
               >
                 <img src={link.src} alt={link.label} />
                 <p>{link.label}</p>
@@ -63,10 +61,9 @@ const Sidebar = () => {
           <li key={index}>
             <NavLink
               to={link.to}
-              onClick={() => setIsOpen(link.label)}
-              className={`present-link ${
-                isOpen === link.label && "active-link"
-              }`}
+              className={({ isActive }) =>
+                `present-link ${isActive ? "active-link" : ""}`
+              }
             >
               <img src={link.src} alt={link.label} className={link.className} />
               <p>{link.label}</p>

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./MedicalCard.css"
 import pencil from "../../../public/Images/Icons/pencil.png"
-import download from "../../../public/Images/Icons/download.png"
+import download from "../../../public/Images/Icons/download.png";
 
 const MedicalCard = () => {
   return (

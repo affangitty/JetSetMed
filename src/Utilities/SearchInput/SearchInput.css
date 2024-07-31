@@ -12,12 +12,12 @@
 .search input {
   width: 88%;
   height: 100%;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   background-color: transparent;
   border: none;
   outline: none;
   color: #00000080;
 }
 .search img {
-  height: 2rem;
+  height: 1.5rem;
 }
