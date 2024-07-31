@@ -1,6 +1,6 @@
 .medical {
   display: flex;
-  height: 100vh;
+  height: 118vh;
 }
 
 .right-half {
@@ -20,20 +20,19 @@
   gap: 2rem;
   margin: 1.5rem 0;
 }
-.right-half{
-    height: 10vh;
-    width: 100%;
+.right-half {
+  height: 10vh;
+  width: 100%;
 }
-.mrcol{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-top: 6rem;
-    width: 100%;
+.mrcol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
-.mrrow{
-    display: flex;
-    width: 100%;
-    padding: 0 0.9rem;
-    gap: 1rem;
+.mrrow {
+  display: flex;
+  width: 100%;
+  padding: 0 0.9rem;
+  gap: 1rem;
 }

@@ -1,6 +1,6 @@
 .ppl {
   height: 3.625rem;
-  width: 11rem;
+  width: 10rem;
   border-radius: 15rem;
   background-color: #0000000d;
   border: 1.68px solid #d0d0d0;
@@ -9,7 +9,16 @@
 }
 .ppl img {
   height: 3rem;
+  cursor: pointer;
 }
-.ppl input {
-  width: 69%;
+.ppl input{
+  width: 68%;
+  height: 100%;
+  padding-left: 1.3rem;
+  font-size: 1.7rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-weight: 400;
 }

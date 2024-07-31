@@ -1,7 +1,7 @@
 .Mcard{
     border: 2px solid #E6E6E6;
-    height: 13rem;
-    width: 19rem;
+    height: 12.5rem;
+    width: 18.5rem;
     border-radius: 10px;
     background-color: white;
     display: flex;
@@ -46,7 +46,7 @@
     font-size: 1.40rem;
 }
 .mctop img{
-    height: 1.55rem;
+    height: 1.5rem;
 }
 .mccircle{
     height: 2.25rem;

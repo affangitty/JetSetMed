@@ -10,13 +10,13 @@
 }
 .date img {
   height: 3rem;
+  cursor: pointer;
 }
-.date input,
-.ppl input {
+.date input{
   width: 60%;
   height: 100%;
   padding-left: 1.3rem;
-  font-size: 1.78rem;
+  font-size: 1.7rem;
   background-color: transparent;
   border: none;
   outline: none;
