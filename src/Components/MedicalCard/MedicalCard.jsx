@@ -7,10 +7,15 @@ const MedicalCard = () => {
   return (
     <div className="Mcard">
       <div className="mctop">
-        <h1>My MedicalReport</h1>
+        <h1>My Medical Report</h1>
         <img src={pencil} />
       </div>
-      <div className="mclow"></div>
+      <div className="mclow">
+        <div className="mcleft"><div className="mclu"><p>December 21, 2023</p></div>
+        <p>Do amet velit eu fugiat dolore proident consectetur cillum mollit.</p>
+        </div>
+        <div className="mccircle"><img src={download} /></div>
+      </div>
     </div>
   )
 }

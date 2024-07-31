@@ -1,6 +1,62 @@
 .Mcard{
     border: 2px solid #E6E6E6;
-    height: 10rem;
-    width: 12rem;
+    height: 13rem;
+    width: 19rem;
+    border-radius: 10px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 4rem;
+}
+.mctop{
+    display: flex;
+    gap: 5rem;
+    padding: 0 1rem;
+}
+.mclow{
+    display: flex;
+    padding: 0 1rem;
+    gap: 2.25rem;
+    align-items: center;
+}
+.mclow p{
+    width: 12rem;
+    font-size: 0.8rem;
+}
+.mcleft{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.mclu p{
+    font-size: 0.8rem;
+    color: #194176;
+}
+.mclu{
+    padding-left: 0.5rem;
+    width: 8.25rem;
+    line-height: 1.25rem;
+    border-color: transparent;
+    border: 2px solid #194176;
+    border-radius: 15rem;
+}
+.mctop h1{
+    width: 60%;
+    font-size: 1.40rem;
+}
+.mctop img{
+    height: 1.55rem;
+}
+.mccircle{
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    background-color: #E38C3B47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mccircle img{
+    height: 1.75rem;
 }
