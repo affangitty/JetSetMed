@@ -37,3 +37,9 @@
   display: flex;
   gap: 2.5rem;
 }
+
+@media (min-width: 769px) {
+  .right-half {
+    margin-left: 20vw;
+  }
+}

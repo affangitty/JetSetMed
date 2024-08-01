@@ -1,34 +1,33 @@
-.scard{
-    height: 13rem;
-    width: 16.5rem;
-    border-radius: 1.5rem;
-    background-color: white;
-    border: 1.5px solid #CACACA;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-top: 1.4rem;
-    padding-left: 1rem;
-    
+.scard {
+  height: 13rem;
+  width: 16.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  border: 1.5px solid #cacaca;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.4rem;
+  padding-left: 1rem;
 }
-.scard img{
-    height: 2.75rem;
-    width: 2.75rem;
+.scard img {
+  height: 2.75rem;
+  width: 2.75rem;
 }
-.scard h1{
-    font-size: 1.45rem;
+.scard h1 {
+  font-size: 1.45rem;
 }
-.scard p{
-    font-size: 0.95rem;
-    color: #717171BD;
+.scard p {
+  font-size: 0.95rem;
+  color: #717171bd;
 }
-.reddot{
-    border-radius: 50%;
-    height: 2.15rem;
-    width: 2.15rem;
-    background-color: #FF3131;
-    position: absolute;
-    left: 91%;
-    bottom: 88.5%;
+.reddot {
+  border-radius: 50%;
+  height: 2.15rem;
+  width: 2.15rem;
+  background-color: #ff3131;
+  position: absolute;
+  left: 91%;
+  bottom: 88.5%;
 }

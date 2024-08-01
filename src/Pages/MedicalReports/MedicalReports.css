@@ -34,3 +34,9 @@
   padding: 0 0.9rem;
   gap: 1rem;
 }
+
+@media (min-width: 769px) {
+  .right-half {
+    margin-left: 20vw;
+  }
+}
