@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
+import logo from "../../../public/Images/Icons/LOGO.png"
 
 const Sidebar = () => {
   const sidebarLinksTop = [
@@ -36,7 +37,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-top">
         <div className="logo">
-          <h1>JetSetMed</h1>
+          <h1><img src={logo} />JetSetMed</h1>
         </div>
         <div className="horizontal-line"></div>
         <ul className="sidebar-links">
