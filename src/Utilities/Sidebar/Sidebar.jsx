@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
-import logo from "../../../public/Images/Icons/LOGO.png"
+import logo from "../../../public/Images/Icons/LOGO.png";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   const sidebarLinksTop = [
     { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
     {
@@ -34,14 +39,38 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="sidebar">
-      <div className="sidebar-top">
-        <div className="logo">
-          <h1><img src={logo} />JetSetMed</h1>
+    <div>
+      <button className="hamburger-menu" onClick={toggleSidebar}>
+        =
+      </button>
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        <div className="sidebar-top">
+          <div className="logo">
+            <h1>
+              <img src={logo} alt="Logo" />
+              JetSetMed
+            </h1>
+          </div>
+          <div className="horizontal-line"></div>
+          <ul className="sidebar-links">
+            {sidebarLinksTop.map((link, index) => (
+              <li key={index}>
+                <NavLink
+                  to={link.to}
+                  className={({ isActive }) =>
+                    `present-link ${isActive ? "active-link" : ""}`
+                  }
+                >
+                  <img src={link.src} alt={link.label} />
+                  <p>{link.label}</p>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="horizontal-line"></div>
         <ul className="sidebar-links">
-          {sidebarLinksTop.map((link, index) => (
+          <div className="horizontal-line"></div>
+          {sidebarLinksBottom.map((link, index) => (
             <li key={index}>
               <NavLink
                 to={link.to}
@@ -49,29 +78,17 @@ const Sidebar = () => {
                   `present-link ${isActive ? "active-link" : ""}`
                 }
               >
-                <img src={link.src} alt={link.label} />
+                <img
+                  src={link.src}
+                  alt={link.label}
+                  className={link.className}
+                />
                 <p>{link.label}</p>
               </NavLink>
             </li>
           ))}
         </ul>
       </div>
-      <ul className="sidebar-links">
-        <div className="horizontal-line"></div>
-        {sidebarLinksBottom.map((link, index) => (
-          <li key={index}>
-            <NavLink
-              to={link.to}
-              className={({ isActive }) =>
-                `present-link ${isActive ? "active-link" : ""}`
-              }
-            >
-              <img src={link.src} alt={link.label} className={link.className} />
-              <p>{link.label}</p>
-            </NavLink>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
