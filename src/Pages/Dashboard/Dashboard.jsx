@@ -15,7 +15,7 @@ const Dashboard = () => {
         <Navbar title={"Dashboard"} />
         <div className="dashboard-main">
           <div className="dash-left">
-            <Greetings name="User " />
+            <Greetings/>
             <BookAppointment />
           </div>
           <div className="dash-right">

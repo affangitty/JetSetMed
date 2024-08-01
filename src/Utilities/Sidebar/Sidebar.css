@@ -6,6 +6,9 @@
   background-color: var(--secondary-color);
   width: 20%;
   color: white;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .sidebar li {

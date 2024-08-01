@@ -2,11 +2,14 @@
   background-color: #f7f7f7;
   box-shadow: 0px 4px 10px 1px #00000017;
   height: 10vh;
-  width: 100%;
+  width: 83%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding:0 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .navright {

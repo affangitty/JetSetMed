@@ -10,6 +10,7 @@
 .dashboard-main {
   display: flex;
   height: 90%;
+  margin-top: 10vh;
 }
 
 .dash-left {
