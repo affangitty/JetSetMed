@@ -3,15 +3,13 @@ import "./OurServices.css";
 import Sidebar from "../../Utilities/Sidebar/Sidebar";
 import Navbar from "../../Utilities/Navbar/Navbar";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
+import DashboardLayout from "../../Layouts/DashboardLayout/DashboardLayout";
 import serviceData1,{serviceData2,serviceData3} from "../../Data/service-data";
 
 const OurServices = () => {
   return (
-    <div className="services">
-      <Sidebar />
-      <div className="right-half">
-        <Navbar title={"Our Services"}/>
-        <div className="osup">
+    <DashboardLayout>
+    <div className="osup">
           <h1 className="head">Services for All</h1>
           <div className="upcards">
             {serviceData1.map((obj,index) => (<ServiceCard key={index} icon={obj.image} heading={obj.heading} text={obj.text}/>))}
@@ -26,8 +24,7 @@ const OurServices = () => {
           {serviceData3.map((obj,index) => (<ServiceCard key={index} icon={obj.image} heading={obj.heading} text={obj.text}/>))}
           </div>
         </div>
-      </div>
-    </div>
+    </DashboardLayout>
   );
 };
 

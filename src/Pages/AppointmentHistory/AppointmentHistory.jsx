@@ -6,16 +6,13 @@ import Navbar from "../../Utilities/Navbar/Navbar";
 import SearchInput from "../../Utilities/SearchInput/SearchInput";
 import DateInput from "../../Utilities/DateInput/DateInput";
 import PeopleInput from "../../Utilities/PeopleInput/PeopleInput";
+import DashboardLayout from "../../Layouts/DashboardLayout/DashboardLayout";
 
 const AppointmentHistory = () => {
   return (
-    <div className="history">
-      <Sidebar />
-      <div className="rightt">
-        <div className="right-half">
-          <Navbar title={"Appointment History"} />
-        </div>
-        <div className="aph">
+    <>
+    <DashboardLayout title="Appointment History">
+    <div className="aph">
           <div className="aph-top-bar">
             <SearchInput />
             <DateInput />
@@ -36,8 +33,8 @@ const AppointmentHistory = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </DashboardLayout>
+    </>
   );
 };
 

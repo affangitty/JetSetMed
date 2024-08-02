@@ -1,11 +1,4 @@
-.services {
-  display: flex;
-  height: 130vh;
-}
-.right-half {
-  height: 10vh;
-  width: 100%;
-}
+
 .head {
   text-align: center;
   font-size: 2rem;

@@ -15,13 +15,12 @@
 
 .layout-main {
   margin-top: 10vh;
-  padding: 1rem;
+  padding: 0.6rem;
   overflow: auto;
   height: calc(100vh - 10vh);
   width: 100%;
 }
 
-/* Media Query for Responsive Design */
 @media (max-width: 768px) {
   .layout-right {
     margin-left: 0;
@@ -30,5 +29,4 @@
   .layout-top {
     width: 100vw;
   }
-  
 }
