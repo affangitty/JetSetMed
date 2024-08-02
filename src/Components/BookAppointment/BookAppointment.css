@@ -40,3 +40,18 @@
   font-size: 4rem;
   color: white;
 }
+
+@media(max-width:769px){
+  .appointments-container h2{
+    font-size: 1.58rem;
+  }
+  .appointments-container p{
+    font-size: 1.25rem;
+  }
+  .appointments-container{
+    height: 29vh;
+  }
+  .appointment-content{
+    width: 10%;
+  }
+}

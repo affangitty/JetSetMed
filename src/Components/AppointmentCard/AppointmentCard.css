@@ -69,5 +69,18 @@
 @media(max-width:768px){
 .AC{
     height: 10rem;
+    width: 95%;
+}
+.doctext h1{
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+.aculeft{
+    width: 50%;
+}
+.acuright{
+    font-size: 0.75rem;
+    align-self:flex-end;
+    padding-bottom: 0.45rem;
 }
 }

@@ -33,17 +33,20 @@
 .dashboard-main{
   flex-direction: column;
   height: auto;
+  margin-top: 0;
 }
 
 .dash-left {
-  width: 80%;
+  margin-top: 10vh;
+  width: 95%;
   height: 100%;
   padding: 2rem;
 }
 
 .dash-right {
+  margin-top: -5vh;
   padding: 2rem;
-  width: 70%;
+  width: 95%;
   height: 100%;
 }
 }

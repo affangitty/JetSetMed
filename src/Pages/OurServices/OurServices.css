@@ -45,11 +45,18 @@
 .upcards,.dc1,.dc2{
   flex-direction: column;
 }
-.osup,.osdown{
-  height: auto;
+.osup{
+  margin-top: 15vh;
+  height: 100vh;
+  justify-content: flex-start;
 }
 .osdown{
-  display: block;
+  margin-top: 10vh;
   width: 150vw;
+  height: 100vh;
+}
+.dc1,.dc2{
+  align-self: flex-start;
+  margin-left: 15vw;
 }
 }

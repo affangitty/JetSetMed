@@ -9,3 +9,8 @@
   text-align: left;
   font-weight: bolder;
 }
+@media(max-width:769px){
+ .greetings{
+   font-size: 1.45rem;  
+}
+}
