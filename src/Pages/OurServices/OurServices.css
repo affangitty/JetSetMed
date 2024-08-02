@@ -37,3 +37,15 @@
   display: flex;
   gap: 2.5rem;
 }
+@media(max-width:768px){
+.upcards,.dc1,.dc2{
+  flex-direction: column;
+}
+.osup,.osdown{
+  height: auto;
+}
+.osdown{
+  display: block;
+  width: 150vw;
+}
+}
