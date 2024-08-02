@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 import logo from "../../../public/Images/Icons/LOGO.png";
-import hamburgerIcon from "../../../public/Images/Icons/hamburger.png"; // Add an icon for the hamburger menu
+import hamburgerIcon from "../../../public/Images/Icons/hamburger.png"; 
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,13 +16,12 @@ const Sidebar = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
       if (window.innerWidth > 768) {
-        setIsOpen(false); // Ensure sidebar is closed on larger screens
+        setIsOpen(false); 
       }
     };
 
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
