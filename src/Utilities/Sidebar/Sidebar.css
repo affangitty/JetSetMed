@@ -6,6 +6,31 @@
   background-color: var(--secondary-color);
   width: 20%;
   color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 100;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger-menu img {
+  width: 30px;
+  height: 30px;
 }
 
 .sidebar li {
@@ -44,7 +69,7 @@
   margin-bottom: 1rem;
 }
 
-.logo>h1>img{
+.logo > h1 > img {
   height: 2.2rem;
 }
 
@@ -52,4 +77,14 @@
   border: 2px solid white;
   border-radius: 50%;
   padding-right: 1px;
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
 }

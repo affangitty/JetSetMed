@@ -1,6 +1,6 @@
 .services {
   display: flex;
-  height: 140vh;
+  height: 130vh;
 }
 .right-half {
   height: 10vh;
@@ -37,7 +37,11 @@
   display: flex;
   gap: 2.5rem;
 }
+
 @media(max-width:768px){
+  .right-half {
+    margin-left: 20vw;
+  }
 .upcards,.dc1,.dc2{
   flex-direction: column;
 }

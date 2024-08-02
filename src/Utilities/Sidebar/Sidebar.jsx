@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
-import logo from "../../../public/Images/Icons/LOGO.png"
+import logo from "../../../public/Images/Icons/LOGO.png";
+import hamburgerIcon from "../../../public/Images/Icons/hamburger.png"; // Add an icon for the hamburger menu
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setIsOpen(false); // Ensure sidebar is closed on larger screens
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const sidebarLinksTop = [
     { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
     {
@@ -34,14 +58,37 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="sidebar">
-      <div className="sidebar-top">
-        <div className="logo">
-          <h1><img src={logo} />JetSetMed</h1>
+    <div>
+      {isMobile && (
+        <button className="hamburger-menu" onClick={toggleSidebar}>
+          <img src={hamburgerIcon} alt="Menu" />
+        </button>
+      )}
+      <div className={`sidebar ${isOpen ? "open" : ""} ${isMobile ? "mobile" : ""}`}>
+        <div className="sidebar-top">
+          <div className="logo">
+            <h1><img src={logo} alt="Logo" />JetSetMed</h1>
+          </div>
+          <div className="horizontal-line"></div>
+          <ul className="sidebar-links">
+            {sidebarLinksTop.map((link, index) => (
+              <li key={index}>
+                <NavLink
+                  to={link.to}
+                  className={({ isActive }) =>
+                    `present-link ${isActive ? "active-link" : ""}`
+                  }
+                >
+                  <img src={link.src} alt={link.label} />
+                  <p>{link.label}</p>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="horizontal-line"></div>
         <ul className="sidebar-links">
-          {sidebarLinksTop.map((link, index) => (
+          <div className="horizontal-line"></div>
+          {sidebarLinksBottom.map((link, index) => (
             <li key={index}>
               <NavLink
                 to={link.to}
@@ -49,29 +96,13 @@ const Sidebar = () => {
                   `present-link ${isActive ? "active-link" : ""}`
                 }
               >
-                <img src={link.src} alt={link.label} />
+                <img src={link.src} alt={link.label} className={link.className} />
                 <p>{link.label}</p>
               </NavLink>
             </li>
           ))}
         </ul>
       </div>
-      <ul className="sidebar-links">
-        <div className="horizontal-line"></div>
-        {sidebarLinksBottom.map((link, index) => (
-          <li key={index}>
-            <NavLink
-              to={link.to}
-              className={({ isActive }) =>
-                `present-link ${isActive ? "active-link" : ""}`
-              }
-            >
-              <img src={link.src} alt={link.label} className={link.className} />
-              <p>{link.label}</p>
-            </NavLink>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

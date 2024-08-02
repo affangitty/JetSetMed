@@ -1,11 +1,9 @@
 .history {
   display: flex;
-  height: 100vh;
 }
 .right-half {
   height: 10vh;
   width: 100%;
-  z-index: 1;
 }
 .rightt {
   display: flex;
@@ -23,7 +21,6 @@
   gap: 2rem;
 }
 .aph {
-  z-index: 0;
   height: 90vh;
   width: 100%;
   background-color: #f7f7f7;
@@ -45,7 +42,12 @@
   gap: 1.2rem;
 }
 
+
+
 @media(max-width:768px){
+  .rightt {
+      margin-left: 20vw;
+    }
 .AppointmentCards{
   flex-direction: column;
 }
