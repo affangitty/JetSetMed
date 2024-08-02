@@ -60,3 +60,14 @@
 .mccircle img{
     height: 1.75rem;
 }
+@media(max-width:768px){
+    .Mcard{
+        width: 100%;
+    }
+    .mctop{
+        gap: 25rem;
+    }
+    .mclow{
+        gap: 28.5rem;
+    }
+}

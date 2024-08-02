@@ -1,7 +1,5 @@
 import React from "react";
 import "./OurServices.css";
-import Sidebar from "../../Utilities/Sidebar/Sidebar";
-import Navbar from "../../Utilities/Navbar/Navbar";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import DashboardLayout from "../../Layouts/DashboardLayout/DashboardLayout";
 import serviceData1,{serviceData2,serviceData3} from "../../Data/service-data";

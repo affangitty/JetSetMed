@@ -31,3 +31,9 @@
   left: 91%;
   bottom: 88.5%;
 }
+
+@media(max-width:768px){
+  .scard{
+    padding-top:2rem;
+    }
+}

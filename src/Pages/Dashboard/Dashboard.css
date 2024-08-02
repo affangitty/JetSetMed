@@ -18,24 +18,19 @@
 
 
 @media(max-width:768px){
-  .dashboard-content {
-      width: 80vw;  
-      margin-left: 20vw ;}
 .dashboard-main{
   flex-direction: column;
   height: auto;
-  margin-top: 0;
 }
 
 .dash-left {
-  margin-top: 10vh;
   width: 95%;
   height: 100%;
   padding: 2rem;
 }
 
 .dash-right {
-  margin-top: -5vh;
+  margin-top: -10vh;
   padding: 2rem;
   width: 95%;
   height: 100%;

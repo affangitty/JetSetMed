@@ -32,10 +32,11 @@
 
 
 @media(max-width:768px){
-  .rightt {
-      margin-left: 20vw;
-    }
-.AppointmentCards{
-  flex-direction: column;
-}
+ .AppointmentCards{
+  height: 110vh;
+ }
+ .aph-top-bar{
+  padding: 3rem 0;
+  gap: 0.75rem;
+ }
 }

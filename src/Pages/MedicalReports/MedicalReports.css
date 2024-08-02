@@ -21,9 +21,9 @@
 }
 
 @media(max-width:768px){
-  .right-half {
-    margin-left: 20vw;
-  }
+.mr-top-bar{
+  gap: 1rem;
+}
 .mrrow{
   flex-direction: column;
 }

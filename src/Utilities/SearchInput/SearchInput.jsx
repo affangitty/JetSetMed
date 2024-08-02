@@ -1,6 +1,6 @@
 import React from 'react';
 import search from "../../../public/Images/Icons/search.png";
-import "./SearchInput.css"; // Create this CSS file for SearchInput specific styles
+import "./SearchInput.css"; 
 
 const SearchInput = () => {
   return (
