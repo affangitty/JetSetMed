@@ -2,13 +2,14 @@
   background-color: #f7f7f7;
   box-shadow: 0px 4px 10px 1px #00000017;
   height: 10vh;
-  width: 83%;
+  width: 82vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:0 2rem;
+  padding: 0 2rem;
   position: fixed;
   top: 0;
+  left: 18vw;
   z-index: 10;
 }
 
@@ -55,4 +56,61 @@
   padding-right: 1rem;
   padding-top: 0.5rem;
   height: 2.6rem;
+}
+
+@media (max-width: 769px) {
+  .navbar {
+    width: 100%;
+    left: 0;
+    padding-left: 3.5rem;
+  }
+  .pinfo h1 {
+    font-size: 1rem;
+  }
+  .profbutton p {
+    font-size: 0.75rem;
+  }
+  .profile {
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  .profbutton {
+    line-height: 1.25rem;
+    text-align: center;
+    width: 4rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .navbar {
+    padding: 0;
+    padding-left: 3rem;
+  }
+  .pinfo h1 {
+    font-size: 0.65rem;
+  }
+  .profbutton p {
+    font-size: 0.6rem;
+  }
+  .navbar-title {
+    font-size: 1rem;
+  }
+  .profile {
+    gap: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .pfp {
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 15%;
+  }
+  .notif {
+    height: 1.5rem;
+    padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  }
+  .profbutton {
+    line-height: 1rem;
+    width: 3.5rem;
+  }
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 import logo from "../../../public/Images/Icons/LOGO.png";
-import hamburgerIcon from "../../../public/Images/Icons/hamburger.png"; 
+import hamburgerIcon from "../../../public/Images/Icons/hamburger.png";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +16,11 @@ const Sidebar = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
       if (window.innerWidth > 768) {
-        setIsOpen(false); 
+        setIsOpen(false);
       }
     };
 
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -63,10 +62,17 @@ const Sidebar = () => {
           <img src={hamburgerIcon} alt="Menu" />
         </button>
       )}
-      <div className={`sidebar ${isOpen ? "open" : ""} ${isMobile ? "mobile" : ""}`}>
+      <div
+        className={`sidebar ${isOpen ? "open" : ""} ${
+          isMobile ? "mobile" : ""
+        }`}
+      >
         <div className="sidebar-top">
           <div className="logo">
-            <h1><img src={logo} alt="Logo" />JetSetMed</h1>
+            <h1>
+              <img src={logo} alt="Logo" />
+              JetSetMed
+            </h1>
           </div>
           <div className="horizontal-line"></div>
           <ul className="sidebar-links">
@@ -95,7 +101,11 @@ const Sidebar = () => {
                   `present-link ${isActive ? "active-link" : ""}`
                 }
               >
-                <img src={link.src} alt={link.label} className={link.className} />
+                <img
+                  src={link.src}
+                  alt={link.label}
+                  className={link.className}
+                />
                 <p>{link.label}</p>
               </NavLink>
             </li>

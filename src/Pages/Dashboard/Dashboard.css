@@ -1,4 +1,4 @@
-.dashboard {
+/* .dashboard {
   display: flex;
   height: 100vh;
 }
@@ -49,4 +49,20 @@
   width: 95%;
   height: 100%;
 }
+} */
+
+.dash-content1 {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}
+.dash-content2 {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+}
+.dash-content3 {
+  height: 500px;
+  width: 500px;
+  background-color: green;
 }
