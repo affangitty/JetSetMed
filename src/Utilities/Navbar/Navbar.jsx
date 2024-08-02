@@ -5,7 +5,7 @@ import userData from "../../Data/user-data.js";
 const Navbar = ({ title }) => {
   return (
     <div className="navbar">
-      <h1>{title}</h1>
+      <h1 className="navbar-title">{title}</h1>
       <div className="navright">
         <img
           className="notif"
