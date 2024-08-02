@@ -1,5 +1,5 @@
 .AC{
-    height: 140rem;
+    height: 140vh;
     width: 33rem;
 }
 .acup{
@@ -82,4 +82,17 @@
     align-self:flex-end;
     padding-bottom: 0.45rem;
 }
+}
+
+@media(max-width:425px){
+  .AC{
+    height: 11rem;
+  }
+  .acuright{
+    width: 50%;
+  }
+  .doctext h1{
+    margin-bottom: 0.05rem;
+    font-size: 0.9rem;
+  }
 }

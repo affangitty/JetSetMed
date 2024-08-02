@@ -16,3 +16,9 @@
   height: 1.1rem;
   margin-right: 10px;
 }
+
+@media(max-width:425.1px){
+ .upload-btn{
+  height: 10rem;
+ } 
+}

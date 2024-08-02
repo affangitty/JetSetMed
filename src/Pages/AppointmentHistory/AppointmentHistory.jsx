@@ -1,8 +1,6 @@
 import React from "react";
 import "./AppointmentHistory.css";
 import AppointmentCard from "../../Components/AppointmentCard/AppointmentCard";
-import Sidebar from "../../Utilities/Sidebar/Sidebar";
-import Navbar from "../../Utilities/Navbar/Navbar";
 import SearchInput from "../../Utilities/SearchInput/SearchInput";
 import DateInput from "../../Utilities/DateInput/DateInput";
 import PeopleInput from "../../Utilities/PeopleInput/PeopleInput";

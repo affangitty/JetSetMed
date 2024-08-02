@@ -28,3 +28,10 @@
   flex-direction: column;
 }
 }
+
+@media(max-width:425.1px){
+ .mr-top-bar{
+  flex-direction: column;
+  height: 25%;
+ } 
+}

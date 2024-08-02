@@ -65,9 +65,25 @@
         width: 100%;
     }
     .mctop{
-        gap: 25rem;
+        gap: 50%;
     }
     .mclow{
-        gap: 28.5rem;
+        gap: 66.85%;
+        width: 100%;
     }
+}
+
+@media(max-width:425.1px){
+ .Mcard{
+    height: 14.5rem;
+ } 
+ .mclow{
+    gap: 32.25%;
+ }
+}
+
+@media(max-width:320px){
+  .mclow{
+    gap: 0.85rem;
+  }
 }

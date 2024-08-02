@@ -26,3 +26,13 @@
     width: 30rem;
   }
 }
+
+@media(max-width:426px){
+ .search{
+  width: 18.5rem;
+  height: 10rem; 
+} 
+.search input{
+  font-size: 0.89rem;
+}
+}

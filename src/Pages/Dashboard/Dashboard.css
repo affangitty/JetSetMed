@@ -36,3 +36,15 @@
   height: 100%;
 }
 }
+
+@media(max-width:425px){
+  .dash-left{
+    width: 100%;
+  }
+  .dashboard-main{
+    width: 103%;
+  }
+  .dash-right{
+    width: 100%;
+  }
+}

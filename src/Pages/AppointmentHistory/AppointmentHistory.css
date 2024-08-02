@@ -40,3 +40,13 @@
   gap: 0.75rem;
  }
 }
+
+@media(max-width:425px){
+  .AppointmentCards{
+    flex-direction: column;
+  }  
+  .aph-top-bar{
+    flex-direction: column;
+    height: 42%;
+  }
+}
