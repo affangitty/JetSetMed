@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import "./Sidebar.css";
+import "./QNASidebar.css";
 import logo from "../../../public/Images/Icons/LOGO.png";
 import hamburgerIcon from "../../../public/Images/Icons/hamburger.png";
 
-const Sidebar = () => {
+const QNASidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const toggleSidebar = () => {
+  const toggleqnaSidebar = () => {
     setIsOpen(!isOpen);
   };
 
@@ -26,7 +26,7 @@ const Sidebar = () => {
     };
   }, []);
 
-  const sidebarLinksTop = [
+  const qnasidebarLinksTop = [
     { to: "/", src: "Images/Icons/dashboard.png", label: "Dashboard" },
     {
       to: "/appointment-history",
@@ -50,7 +50,7 @@ const Sidebar = () => {
     },
   ];
 
-  const sidebarLinksBottom = [
+  const qnasidebarLinksBottom = [
     {
       to: "/rewatch-tutorial",
       src: "Images/Icons/rewind.png",
@@ -63,16 +63,16 @@ const Sidebar = () => {
   return (
     <div>
       {isMobile && (
-        <button className="hamburger-menu" onClick={toggleSidebar}>
+        <button className="hamburger-menu" onClick={toggleqnaSidebar}>
           <img src={hamburgerIcon} alt="Menu" />
         </button>
       )}
       <div
-        className={`sidebar ${isOpen ? "open" : ""} ${
+        className={`qnasidebar ${isOpen ? "open" : ""} ${
           isMobile ? "mobile" : ""
         }`}
       >
-        <div className="sidebar-top">
+        <div className="qnasidebar-top">
           <div className="logo">
             <h1>
               <img src={logo} alt="Logo" />
@@ -80,8 +80,8 @@ const Sidebar = () => {
             </h1>
           </div>
           <div className="horizontal-line"></div>
-          <ul className="sidebar-links">
-            {sidebarLinksTop.map((link, index) => (
+          <ul className="qnasidebar-links">
+            {qnasidebarLinksTop.map((link, index) => (
               <li key={index}>
                 <NavLink
                   to={link.to}
@@ -96,9 +96,9 @@ const Sidebar = () => {
             ))}
           </ul>
         </div>
-        <ul className="sidebar-links">
+        <ul className="qnasidebar-links">
           <div className="horizontal-line"></div>
-          {sidebarLinksBottom.map((link, index) => (
+          {qnasidebarLinksBottom.map((link, index) => (
             <li key={index}>
               <NavLink
                 to={link.to}
@@ -121,4 +121,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default QNASidebar;

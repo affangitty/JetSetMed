@@ -1,0 +1,132 @@
+.qnasidebar {
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    width: 18vw;
+    height: 100vh;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 100;
+  }
+  
+  .qnasidebar.open {
+    transform: translateX(0);
+  }
+  
+  .hamburger-menu {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger-menu img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  
+  .qnasidebar li {
+    margin: 30px 0;
+  }
+  
+  .qnasidebar-links img {
+    height: 1.5rem;
+  }
+  
+  .present-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    padding-left: 0.5rem;
+  }
+  
+  .active-link {
+    color: #e38c3b;
+    border-left: 3px solid #e38c3b;
+    border-radius: 2px;
+  }
+  
+  .horizontal-line {
+    border-bottom: 3px solid #5989ad;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logo > h1 > img {
+    height: 2.2rem;
+  }
+  
+  .rewind-logo {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding-right: 1px;
+  }
+  
+  @media (min-width: 769px) {
+    .qnasidebar {
+      transform: translateX(0);
+    }
+  
+    .hamburger-menu {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .qnasidebar{
+      width: 30vw;
+    }
+    .logo{
+      font-size: 0.9rem;
+    }
+    .qnasidebar-top{
+      margin-top: 3rem;
+    }
+    .logo > h1 > img {
+      height: 1.75rem;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 426px){
+    .qnasidebar{
+      width: 50vw;
+    }
+    .logo{
+      font-size: 0.6rem;
+    }
+    .logo > h1 > img {
+      height: 1.25rem;
+      margin-right: 8px;
+    }
+    .qnasidebar-links{
+      font-size: 0.8rem;
+    }
+    .qnasidebar-links img {
+      height: 1rem;
+    }
+    .hamburger-menu img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  
+  

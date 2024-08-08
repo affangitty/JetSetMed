@@ -1,0 +1,51 @@
+/* Questionnaire.css */
+
+.questionnaire {
+  width: 600px;
+  padding: 20px;
+  background-color: #F7F3F2;
+  border-radius: 8px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.question input[type="radio"],
+.question input[type="text"],
+.question input[type="range"] {
+  margin-top: 4px;
+}
+
+.question input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004494;
+}

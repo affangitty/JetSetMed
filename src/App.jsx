@@ -4,6 +4,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import AppointmentHistory from "./Pages/AppointmentHistory/AppointmentHistory";
 import MedicalReports from "./Pages/MedicalReports/MedicalReports";
 import OurServices from "./Pages/OurServices/OurServices";
+import TravelRiskAssessment from "./Pages/TravelRiskAssessment/TravelRiskAssessment";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
           <Route path="/appointment-history" element={<AppointmentHistory />} />
           <Route path="/medical-reports" element={<MedicalReports />} />
           <Route path="/our-services" element={<OurServices />} />
+          <Route path="/travel-risk-assessment" element={<TravelRiskAssessment/>} />
+          
         </Routes>
       </BrowserRouter>
     </div>
